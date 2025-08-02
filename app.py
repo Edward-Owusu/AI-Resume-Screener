@@ -16,6 +16,34 @@ def save_uploaded_file(uploaded_file):
 
 st.set_page_config(page_title="AI Resume Screener", layout="centered")
 st.title("📄 AI-Based Resume Screener")
+# Inject custom CSS for background and styling
+st.markdown(
+    """
+    <style>
+    /* App background */
+    .stApp {
+        background-image: url("https://images.unsplash.com/photo-1521791136064-7986c2920216"); /* Example image */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* Text container background */
+    .block-container {
+        background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+        padding: 2rem;
+        border-radius: 12px;
+    }
+
+    /* Header font */
+    h1, h2, h3, .stTextInput label {
+        color: #003366;
+        font-family: 'Segoe UI', sans-serif;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 st.header("Step 1: Upload Resume")
 resume_file = st.file_uploader("Upload Resume (PDF or DOCX)", type=["pdf", "docx"])
