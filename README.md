@@ -2,6 +2,9 @@
 
 An AI-powered web app that automatically evaluates resumes against job descriptions using natural language processing. Built with Python and Streamlit, this tool helps job seekers improve their resumes and helps employers quickly assess candidate-job fit.
 
+
+🔗 [Live Demo on Streamlit](https://ai-resume-screener-2ergge6n3y4fercyvqdja5.streamlit.app/)
+
 > 🔗 GitHub: [Edward-Owusu/AI-Resume-Screener](https://github.com/Edward-Owusu/AI-Resume-Screener)
 
 ---
